@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>بوابة أيمز الذكية</title>
+<style>
+        @font-face {
+            font-family: 'Almarai-Bold';
+            src: url('Almarai-Bold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Candara-Light';
+            src: url('candara-light.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Almarai-Bold', sans-serif;
+            background-color: #F1F1F1;
+            color: #3B3838;
+        }
+
+        footer {
+            font-family: 'Candara-Light', sans-serif;
+        }
+
+        /* بقية التنسيقات كما هي بدون تعديل */
+
+        .banner {
+            background-color: #183932;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .site-title {
+            font-size: 28px;
+            margin: 10px 0;
+            color: #E56B54;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .app-card:hover {
+            background: linear-gradient(to bottom, #ffffff, #fbe8e5);
+            box-shadow: 0 0 15px rgba(229, 107, 84, 0.3);
+            transform: translateY(-10px);
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px;
+            object-fit: contain;
+        }
+
+        .app-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #183932;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: #E56B54;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .app-button:hover {
+            background-color: #183932;
+        }
+
+        footer {
+            background-color: #183932;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        .app-page {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 900px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .app-page-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .app-page-icon {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-left: 30px;
+        }
+
+        .app-page-title {
+            font-size: 28px;
+            color: #183932;
+            flex: 1;
+        }
+
+        .app-description {
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .download-section {
+            margin-top: 30px;
+            border-top: 1px dashed #E56B54;
+            padding-top: 20px;
+        }
+
+        .download-title {
+            color: #183932;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .download-item {
+            margin-bottom: 10px;
+        }
+
+        .download-link {
+            color: #E56B54;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .download-link:hover {
+            color: #183932;
+            text-decoration: underline;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #183932;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #E56B54;
+        }
+
+        @media (max-width: 768px) {
+            .app-page-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .app-page-icon {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+<img alt="المركز العربي للإدارة والبيع" src="Banar Web.jpg"/>
+<h1 class="site-title">بوابة أيمز الذكية</h1>
+</div>
+<div class="container">
+<div class="apps-grid">
+<div class="app-card">
+<img alt="نظام تتبع الشهادات" class="app-icon" src="cert-tracker-icon.png"/>
+<h2 class="app-title">نظام تتبع الشهادات</h2>
+<a class="app-button" href="cert-tracker.html">الدخول إلى النظام</a>
+</div>
+<div class="app-card">
+<img alt="نظام إنشاء الشهادات التدريبية" class="app-icon" src="cert-generator-icon.png"/>
+<h2 class="app-title">نظام إنشاء الشهادات التدريبية</h2>
+<a class="app-button" href="cert-generator.html">الدخول إلى النظام</a>
+</div>
+<div class="app-card">
+<img alt="نظام إعداد كشف الحضور" class="app-icon" src="attendance-icon.png"/>
+<h2 class="app-title">نظام إعداد كشف الحضور</h2>
+<a class="app-button" href="attendance.html">الدخول إلى النظام</a>
+</div>
+</div>
+</div>
+<footer>
+        Created by Dr. Hayan Saffan | AIME Training Center | Copy Rights 2025-2026
+    </footer>
+</body>
+</html>

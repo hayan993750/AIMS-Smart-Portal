@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إنشاء الشهادات التدريبية | بوابة أيمز الذكية</title>
+    <style>
+        @font-face {
+            font-family: 'Almarai-Bold';
+            src: url('Almarai-Bold.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Candara-Light';
+            src: url('candara-light.ttf') format('truetype');
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Almarai-Bold', sans-serif;
+            background-color: #F1F1F1;
+            color: #3B3838;
+        }
+        
+        .banner {
+            background-color: #183932;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .site-title {
+            font-size: 28px;
+            margin: 10px 0;
+            color: #E56B54;
+        }
+        
+        .app-page {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 900px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .app-page-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .app-page-icon {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-left: 30px;
+        }
+        
+        .app-page-title {
+            font-size: 28px;
+            color: #183932;
+            flex: 1;
+        }
+        
+        .app-description {
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .app-link {
+            display: inline-block;
+            background-color: #E56B54;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        
+        .app-link:hover {
+            background-color: #183932;
+        }
+        
+        .download-section {
+            margin-top: 30px;
+            border-top: 1px dashed #E56B54;
+            padding-top: 20px;
+        }
+        
+        .download-title {
+            color: #183932;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .download-item {
+            margin-bottom: 10px;
+        }
+        
+        .download-link {
+            color: #E56B54;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .download-link:hover {
+            color: #183932;
+            text-decoration: underline;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background-color: #183932;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        
+        .back-button:hover {
+            background-color: #E56B54;
+        }
+        
+        footer {
+            background-color: #183932;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-family: 'Candara-Light', sans-serif;
+        }
+        
+        @media (max-width: 768px) {
+            .app-page-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .app-page-icon {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="Banar Web.jpg" alt="المركز العربي للإدارة والبيع">
+        <h1 class="site-title">بوابة أيمز الذكية</h1>
+    </div>
+    
+    <div class="app-page">
+        <div class="app-page-header">
+            <img src="cert-generator-icon.png" alt="نظام إنشاء الشهادات التدريبية" class="app-page-icon">
+            <h1 class="app-page-title">نظام إنشاء الشهادات التدريبية</h1>
+        </div>
+        
+        <div class="app-description">
+            <p>هذا الموقع هو نظام لإنشاء الشهادات التدريبية بشكل آلي، حيث يتيح للمستخدمين رفع قالب الشهادة بصيغة Word، بالإضافة إلى ملف Excel يحتوي على بيانات المتدربين بعد تفريغ الأسماء فيه. يمكن من خلال الموقع توليد شهادات متعددة دفعة واحدة، مع تضمين معلومات مثل اسم البرنامج وتاريخه ووقته. يتميز الموقع بواجهة سهلة الاستخدام وبدعم كامل للغة العربية.</p>
+            <p>كل ما عليك هو رفع قالب الشهادة المُعدل دون إجراء أي تعديل على الأكواد الموجودة داخله، ثم رفع ملف Excel بعد تفريغه، بحيث يحتوي على رقم الشهادة واسم كل مرشح. كما يُطلب منك إدخال عدد المرشحين واسم البرنامج وتاريخه ووقته داخل الموقع.</p>
+            <p>ملاحظة: عند تحميل قالب الشهادة، يجب التأكد من أن خلفية الشهادة مدمجة ضمن الترويسة والتذييل. كما ينبغي إدراج شعار الجهة في نفس الترويسة والتذييل بشكل متناسق، بحيث يظهر في الزاوية العلوية اليسرى من الصفحة. ويرجى عدم تعديل أو حذف أي من الأكواد الموجودة داخل القالب، لضمان عمل النظام بالشكل الصحيح.</p>
+        </div>
+        
+        <a href="https://hayan993750.github.io/certificates-generator/" target="_blank" class="app-link">الدخول إلى نظام إنشاء الشهادات</a>
+        
+        <div class="download-section">
+            <h3 class="download-title">مرفقات النظام:</h3>
+            <div class="download-item">
+                <a href="https://drive.google.com/uc?export=download&id=1s_bZZG_LB3R7g1tSf2DOARrCitypYh0h" class="download-link" download>صورة خلفية الشهادة المعتمدة</a>
+            </div>
+            <div class="download-item">
+                <a href="https://docs.google.com/spreadsheets/d/14OpYJiPGM58dvvRVk4V88xma_hVPhQe3/export?format=xlsx" class="download-link" download>قالب أسماء المرشحين</a>
+            </div>
+            <div class="download-item">
+                <a href="https://docs.google.com/document/d/1lQKxKO4oIq3O6L43dofQ8bZNxQ1gN8nS/export?format=docx" class="download-link" download>قالب الشهادة الجاهز لبرامج الجهات الآخرى</a>
+            </div>
+            <div class="download-item">
+                <a href="https://docs.google.com/document/d/1O7MXye3nc4kWs8hTnYCzWt9zz7MisbHb/export?format=docx" class="download-link" download>قالب الشهادة الجاهز لبرامج ساسو</a>
+            </div>
+            <div class="download-item">
+                <a href="https://docs.google.com/document/d/1wCUdrQ7xnrgQSZ8-PTtVhxh7QAI1b9uF/export?format=docx" class="download-link" download>قالب الشهادة بدون خلفية وبدون شعار الجهة</a>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-button">العودة إلى الصفحة الرئيسية</a>
+    </div>
+    
+    <footer>
+        Created by Dr. Hayan Saffan | AIME Training Center | Copy Rights 2025-2026
+    </footer>
+</body>
+</html>
